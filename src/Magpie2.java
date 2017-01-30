@@ -8,14 +8,14 @@
  * Handles responding to simple words and phrases</li>
  * </ul>
  * This version uses a nested if to handle default responses.
- * 
+ *
  * @author Laurie White
  * @version April 2012
  */
 public class Magpie2 {
 	/**
 	 * Get a default greeting
-	 * 
+	 *
 	 * @return a greeting
 	 */
 	public String getGreeting() {
@@ -24,7 +24,7 @@ public class Magpie2 {
 
 	/**
 	 * Gives a response to a user statement
-	 * 
+	 *
 	 * @param statement
 	 *            the user statement
 	 * @return a response based on the rules given
@@ -41,14 +41,16 @@ public class Magpie2 {
 		} else if (statement.indexOf("cat") >= 0
 				|| statement.indexOf("dog") >= 0) {
 			response = "Tell me more about your pets.";
-		} else if (statement.indexOf("Mr.Padjen") >= 0) { 
+		} else if (statement.indexOf("Mr.Padjen") >= 0) {
 			response = "Oh Padjen is the best teacher.";
 		} else if("".equals(statement.trim())) {
 			response = "say something please.";
 		} else if (statement.indexOf("kill") >= 0) {
-			response = "killing is bad. Do I need to call the cops?"; 
+			response = "killing is bad. Do I need to call the cops?";
 		} else if (statement.indexOf("Trump") >= 0) {
-			response = "You know of the god emperor?"; 
+			response = "You know of the god emperor?";
+		} else if (statement.indexOf("car") >= 0) {
+			response = "I hate those things.";
 		} else {
 			response = getRandomResponse();
 		}
@@ -57,7 +59,7 @@ public class Magpie2 {
 
 	/**
 	 * Pick a default response to use if nothing else fits.
-	 * 
+	 *
 	 * @return a non-committal string
 	 */
 	private String getRandomResponse() {
