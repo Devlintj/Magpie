@@ -250,6 +250,6 @@ public class Magpie5 {
 	}
 
 	private String[] randomResponses = { "Interesting, tell me more", "Hmmm.",
-			"Do you really think so?", "You don't say." };
+			"Do you really think so?", "You don't say.", "Uh-huh", "I see", "ahhh", "that's nice" };
 
 }
